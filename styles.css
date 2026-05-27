@@ -15,12 +15,22 @@ body {
 
     background: white;
     padding: 1rem;
-    border-radius: 2rem;
 }
 .display {
     text-align: end;
 
     background: red;
     padding: 1rem;
-    border-radius: 2rem;
+}
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    background: blue;
+}
+.keypad > * {
+    aspect-ratio: 1;
+    text-align: center;
+    background: red;
 }
