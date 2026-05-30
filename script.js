@@ -3,4 +3,4 @@ const display = calculator.querySelector(".display")
 const keypad = calculator.querySelector(".keypad")
 const keys = keypad.querySelectorAll("div")
 
-keys.forEach(key => key.onclick = () => alert(key.textContent))
+keys.forEach(key => key.onclick = () => display.textContent += key.textContent)
