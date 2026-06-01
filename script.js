@@ -10,3 +10,7 @@ evaluate.onclick = () => display.textContent = eval(display.textContent)
 
 const clear = keypad.querySelector(".clear")
 clear.onclick = () => display.textContent = ""
+
+const del = keypad.querySelector(".del")
+del.onclick = () => display.textContent = display.textContent.slice(0, -1)
+
